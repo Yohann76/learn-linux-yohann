@@ -1,0 +1,49 @@
+site_name: Learn linux
+site_description: Documentation for learn linux
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - Introduction: 
+    - index.md
+  - Fichiers:
+    - navigation/navigation.md
+  - Permissions/User:
+    - permissions/permissions.md
+  - Processus:
+    - processus/processus.md
+  - Système/Disques:
+    - gestion/gestion.md
+  - Paquets:
+    - paquets/paquets.md
+  - Shell:
+    - shell/shell.md
+  - Réseau:
+    - reseau/reseau.md
+  - Sécurité:
+    - securite/securite.md
+  - Administration:
+    - avancé/avancé.md
+  - Projets:
+    - projets/projets.md
+  - Plus loin:
+    - next/next.md
+
+
