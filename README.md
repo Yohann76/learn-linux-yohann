@@ -11,8 +11,12 @@ Available in http://localhost:8000
 ## Available with Github Page (soon)
 
 ```
-https://xxxxxxx.github.io/xxxxxxx/
+https://yohann76.github.io/learn-linux-yohann/
 ```
+
+workflow ci.yml -> mkdocs gh-deploy (generate and deploy static files to gh-pages branch when push to main branch) 
+Configure available page -> Github Setting -> Pages -> Source (deploy from a branch)
+Branch gh-pages branh + root
 
 ## Contribute
 
@@ -27,7 +31,6 @@ https://xxxxxxx.github.io/xxxxxxx/
 
 ## Program
 
-```
 Module 1 : Introduction à Linux
 
 ```
@@ -51,7 +54,6 @@ Module 3 : Permissions et gestion des utilisateurs
 
 ```
 Propriétaires, groupes, UID / GID
-
 Permissions : chmod, chown, octal vs symbolique
 umask
 ACL (Access Control Lists)
