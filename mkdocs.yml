@@ -1,5 +1,5 @@
-site_name: Learn linux
-site_description: Documentation for learn linux
+site_name: Learn Linux
+site_description: Formation Linux en 6 modules (bases, système, logiciels & shell, réseau, sécurité, projets)
 theme:
   name: material
   language: fr
@@ -21,29 +21,73 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Introduction: 
-    - index.md
-  - Fichiers:
-    - navigation/navigation.md
-  - Permissions/User:
-    - permissions/permissions.md
-  - Processus:
-    - processus/processus.md
-  - Système/Disques:
-    - gestion/gestion.md
-  - Paquets:
-    - paquets/paquets.md
-  - Shell:
-    - shell/shell.md
-  - Réseau:
-    - reseau/reseau.md
-  - Sécurité:
-    - securite/securite.md
-  - Administration:
-    - avancé/avancé.md
-  - Projets:
-    - projets/projets.md
-  - Plus loin:
-    - next/next.md
+  - Accueil: index.md
 
+  - "1. Découverte et bases":
+    - Qu'est-ce que Linux ?: 01-introduction/01-qu-est-ce-que-linux.md
+    - Pourquoi utiliser Linux : 01-introduction/02-pourquoi-linux.md
+    - Les bases du système : 01-introduction/03-bases-systeme.md
+    - Installation (VM, WSL, dual boot) : 01-introduction/04-installation.md
+    - Structure du système de fichiers : 02-fichiers/01-structure-fichiers.md
+    - Commandes de base (ls, cd, cp, mv, rm) : 02-fichiers/02-commandes-base.md
+    - Liens symboliques et hard links : 02-fichiers/03-liens-symboliques.md
+    - Montage et démontage (mount, umount) : 02-fichiers/04-montage-disques.md
+    - Espace disque (du, df) : 02-fichiers/05-espace-disque.md
 
+  - "2. Système : permissions, processus, disques":
+    - Propriétaires, groupes, UID/GID : 03-permissions/01-proprietaires-groupes.md
+    - Permissions (chmod, chown) : 03-permissions/02-permissions-chmod-chown.md
+    - umask et ACL : 03-permissions/03-umask-acl.md
+    - Utilisateurs et groupes : 03-permissions/04-utilisateurs-groupes.md
+    - sudo et escalade de privilèges : 03-permissions/05-sudo.md
+    - Processus (ps, top, htop) : 04-processus/01-processus-ps-top.md
+    - Signaux (kill, pkill) : 04-processus/02-signaux-kill.md
+    - Priorités (nice, renice) : 04-processus/03-priorites-nice.md
+    - Arrière-plan et jobs : 04-processus/04-background-jobs.md
+    - Planification (cron, at) : 04-processus/05-cron-at.md
+    - systemd et systemctl : 04-processus/06-systemd-services.md
+    - Logs (journalctl, /var/log) : 04-processus/07-logs-journalctl.md
+    - Types de systèmes de fichiers : 05-disques/01-types-filesystem.md
+    - Partitionnement (fdisk, parted) : 05-disques/02-partitionnement.md
+    - LVM : 05-disques/03-lvm.md
+    - Swap et /etc/fstab : 05-disques/04-swap-fstab.md
+    - Inodes : 05-disques/05-inodes.md
+
+  - "3. Logiciels et shell":
+    - Gestionnaires (apt, yum/dnf, pacman) : 06-paquets/01-managers-apt-yum.md
+    - Dépôts, installation, mise à jour : 06-paquets/02-repos-installation.md
+    - Compilation depuis les sources : 06-paquets/03-compilation-sources.md
+    - Introduction au shell (bash, zsh) : 07-shell/01-introduction-bash.md
+    - Variables, conditions, boucles : 07-shell/02-variables-conditions-boucles.md
+    - Fonctions : 07-shell/03-fonctions.md
+    - Redirections et pipes : 07-shell/04-redirections-pipes.md
+    - Automatisation et scripts : 07-shell/05-automatisation.md
+
+  - "4. Réseau":
+    - Concepts (IP, DNS, sous-réseaux) : 08-reseau/01-concepts-ip-dns.md
+    - Commandes (ping, ss, ip, netstat) : 08-reseau/02-commandes-ping-ss-ip.md
+    - SSH (configuration, clés, tunnels) : 08-reseau/03-ssh.md
+    - Pare-feu (iptables, nftables) : 08-reseau/04-pare-feu-iptables.md
+    - Transfert de fichiers (scp, rsync) : 08-reseau/05-scp-rsync.md
+
+  - "5. Sécurité et administration":
+    - Gestion des privilèges root : 09-securite/01-privileges-root.md
+    - Authentification (mot de passe, clés SSH) : 09-securite/02-authentification.md
+    - Sécurisation des services : 09-securite/03-securisation-services.md
+    - SELinux / AppArmor : 09-securite/04-selinux-apparmor.md
+    - Chiffrement (fichiers, disques) : 09-securite/05-chiffrement.md
+    - Journaux et monitoring : 10-administration/01-journaux-monitoring.md
+    - Sauvegarde et restauration : 10-administration/02-sauvegarde-restauration.md
+    - Virtualisation et conteneurs : 10-administration/03-virtualisation-conteneurs.md
+    - ulimits et cgroups : 10-administration/04-ulimits-cgroups.md
+
+  - "6. Projets et approfondissement":
+    - Script de backup automatique : 11-projets/01-script-backup.md
+    - Serveur web (Apache / Nginx) : 11-projets/02-serveur-web.md
+    - Gestion utilisateurs automatisée : 11-projets/03-gestion-users.md
+    - Surveillance et alertes : 11-projets/04-monitoring-alertes.md
+    - Archivage des logs : 11-projets/05-archivage-logs.md
+    - Le noyau Linux : 12-plus-loin/01-kernel-linux.md
+    - Contribution open source : 12-plus-loin/02-contribution-open-source.md
+    - Linux, DevOps et cloud : 12-plus-loin/03-devops-cloud.md
+    - Performances et sécurité avancée : 12-plus-loin/04-performances-securite.md
